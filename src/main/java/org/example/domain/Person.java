@@ -1,23 +1,25 @@
 package org.example.domain;
+import org.example.AlreadyMarkedAsDeceasedException;
 import org.example.valueobject.*;
 
 import java.util.Objects;
 import java.util.Set;
+import java.util.UUID;
 
 public class Person {
-    private ID id;
+    private UUID id;
     private SocialSecurityNumber socialSecurityNumber;
     private FirstName firstName;
     private LastName lastName;
     private DateOfBirth dateOfBirth;
     private DateOfDeath dateOfDeath;
-    private Set<Address> addresses;
+    private Address address;
     private MotherLanguage motherLanguage;
     private Set<Relationship> relationships;
     private Set<Nationality> nationalities;
 
-    public Person(ID id, SocialSecurityNumber socialSecurityNumber, FirstName firstName, LastName lastName,
-                  DateOfBirth dateOfBirth, DateOfDeath dateOfDeath, Set<Address> addresses,
+    public Person(UUID id, SocialSecurityNumber socialSecurityNumber, FirstName firstName, LastName lastName,
+                  DateOfBirth dateOfBirth, DateOfDeath dateOfDeath, Address address,
                   MotherLanguage motherLanguage, Set<Relationship> relationships, Set<Nationality> nationalities) {
         this.id = id;
         this.socialSecurityNumber = socialSecurityNumber;
@@ -25,10 +27,14 @@ public class Person {
         this.lastName = lastName;
         this.dateOfBirth = dateOfBirth;
         this.dateOfDeath = dateOfDeath;
-        this.addresses = addresses;
+        this.address = address;
         this.motherLanguage = motherLanguage;
         this.relationships = relationships;
         this.nationalities = nationalities;
+    }
+
+    public UUID getId() {
+        return id;
     }
 
     public boolean isAlive() {
@@ -36,6 +42,10 @@ public class Person {
     }
 
     public void markAsDeceased(DateOfDeath dateOfDeath) {
+        if (this.dateOfDeath != null) {
+            throw new AlreadyMarkedAsDeceasedException("This person has already been marked as deceased.");
+        }
+
         this.dateOfDeath = dateOfDeath;
     }
 
@@ -48,8 +58,7 @@ public class Person {
     }
 
     public void move(Address newAddress) {
-        // check later
-        this.addresses.add(newAddress);
+        this.address = newAddress;
     }
 
     public void addNationality(Nationality nationality) {

@@ -1,20 +1,16 @@
-package org.example.domain;
+package org.example.valueobject;
 
 import java.util.Objects;
 
-public final class City {
+public final class SurfaceArea {
 
-    private final String value;
+    private final int value;
 
-    public City(String value) {
-        if (value == null) {
-            throw new IllegalArgumentException("City cannot be null.");
-        }
-
+    public SurfaceArea(int value) {
         this.value = value;
     }
 
-    public String getValue() {
+    public int getValue() {
         return value;
     }
 
@@ -22,8 +18,8 @@ public final class City {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        City city = (City) o;
-        return Objects.equals(value, city.value);
+        SurfaceArea that = (SurfaceArea) o;
+        return value == that.value;
     }
 
     @Override
@@ -33,8 +29,8 @@ public final class City {
 
     @Override
     public String toString() {
-        return "City{" +
-                "value='" + value + '\'' +
+        return "SurfaceArea{" +
+                "value=" + value +
                 '}';
     }
 }
