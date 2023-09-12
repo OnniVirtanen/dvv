@@ -1,4 +1,4 @@
-package org.example.valueobject;
+package org.example.valueobject.building;
 
 import java.util.Objects;
 
@@ -52,10 +52,10 @@ public class PurposeOfUse {
         MIXED_USE,
         RETAIL,
         OFFICE_SPACE,
-        HOSPITALITY,  // Hotels, motels, etc.
-        CULTURAL,     // Museums, galleries, etc.
-        SPORTS,       // Stadiums, sports facilities, etc.
-        TRANSPORT,    // Train stations, airports, etc.
+        HOSPITALITY,
+        CULTURAL,
+        SPORTS,
+        TRANSPORT,
         OTHER;
     }
 }

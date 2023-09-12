@@ -1,11 +1,12 @@
 package org.example.domain;
 
-import org.example.valueobject.*;
+import org.example.valueobject.address.*;
 
 import java.util.Objects;
 import java.util.UUID;
 
 public class Address {
+
     private UUID id;
     private Street street;
     private Apartment apartment;
@@ -28,14 +29,6 @@ public class Address {
 
     public String formatFullAddress() {
         return street + ", " + city + ", " + postalCode + ", " + country;
-    }
-
-    public void updateApartment(Apartment apartment) {
-        this.apartment = apartment;
-    }
-
-    public void updateStreet(Street street) {
-        this.street = street;
     }
 
     @Override

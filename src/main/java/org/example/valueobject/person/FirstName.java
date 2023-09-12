@@ -1,14 +1,14 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.util.Objects;
 
-public final class LastName {
+public final class FirstName {
 
     private final String value;
 
-    public LastName(String value) {
+    public FirstName(String value) {
         if (value == null || value.trim().isEmpty()) {
-            throw new IllegalArgumentException("Last name cannot be null or empty.");
+            throw new IllegalArgumentException("First name cannot be null or empty.");
         }
 
         this.value = value;
@@ -22,8 +22,8 @@ public final class LastName {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        LastName lastName = (LastName) o;
-        return Objects.equals(value, lastName.value);
+        FirstName firstName = (FirstName) o;
+        return Objects.equals(value, firstName.value);
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class LastName {
 
     @Override
     public String toString() {
-        return "LastName{" +
+        return "FirstName{" +
                 "value='" + value + '\'' +
                 '}';
     }

@@ -1,4 +1,4 @@
-package org.example.valueobject;
+package org.example.valueobject.building;
 
 import java.util.Objects;
 
@@ -7,6 +7,10 @@ public final class SurfaceArea {
     private final int value;
 
     public SurfaceArea(int value) {
+        if (value <= 0) {
+            throw new IllegalArgumentException("Surface area cannot be negative or 0.");
+        }
+
         this.value = value;
     }
 

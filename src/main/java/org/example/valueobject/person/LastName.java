@@ -1,12 +1,16 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.util.Objects;
 
-public final class Country {
+public final class LastName {
 
     private final String value;
 
-    public Country(String value) {
+    public LastName(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException("Last name cannot be null or empty.");
+        }
+
         this.value = value;
     }
 
@@ -18,8 +22,8 @@ public final class Country {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Country country = (Country) o;
-        return Objects.equals(value, country.value);
+        LastName lastName = (LastName) o;
+        return Objects.equals(value, lastName.value);
     }
 
     @Override
@@ -29,7 +33,7 @@ public final class Country {
 
     @Override
     public String toString() {
-        return "Country{" +
+        return "LastName{" +
                 "value='" + value + '\'' +
                 '}';
     }

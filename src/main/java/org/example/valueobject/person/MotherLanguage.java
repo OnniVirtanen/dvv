@@ -1,14 +1,14 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.util.Objects;
 
-public final class Apartment {
+public final class MotherLanguage {
 
     private final String value;
 
-    public Apartment(String value) {
-        if (value == null) {
-            throw new IllegalArgumentException("Apartment cannot be null.");
+    public MotherLanguage(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException("Mother language cannot be null.");
         }
 
         this.value = value;
@@ -22,8 +22,8 @@ public final class Apartment {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Apartment apartment = (Apartment) o;
-        return Objects.equals(value, apartment.value);
+        MotherLanguage that = (MotherLanguage) o;
+        return Objects.equals(value, that.value);
     }
 
     @Override
@@ -33,7 +33,7 @@ public final class Apartment {
 
     @Override
     public String toString() {
-        return "Apartment{" +
+        return "MotherLanguage{" +
                 "value='" + value + '\'' +
                 '}';
     }

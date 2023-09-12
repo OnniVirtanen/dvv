@@ -1,24 +1,30 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.util.Objects;
 
-public final class Nationality {
+public final class SocialSecurityNumber {
 
     private final String value;
 
-    public Nationality(String value) {
-        if (value == null) {
-            throw new IllegalArgumentException("Nationality cannot be null.");
+    public SocialSecurityNumber(String value) {
+        if (value == null || value.trim().isEmpty()) {
+            throw new IllegalArgumentException("Social security number cannot be null or empty.");
         }
 
+        // validate social security number with additional logic
+
         this.value = value;
+    }
+
+    public String getValue() {
+        return value;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Nationality that = (Nationality) o;
+        SocialSecurityNumber that = (SocialSecurityNumber) o;
         return Objects.equals(value, that.value);
     }
 
@@ -29,7 +35,7 @@ public final class Nationality {
 
     @Override
     public String toString() {
-        return "Nationality{" +
+        return "SocialSecurityNumber{" +
                 "value='" + value + '\'' +
                 '}';
     }

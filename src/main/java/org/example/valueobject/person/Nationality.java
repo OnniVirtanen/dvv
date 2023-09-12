@@ -1,29 +1,25 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.util.Objects;
 
-public final class Street {
+public final class Nationality {
 
     private final String value;
 
-    public Street(String value) {
+    public Nationality(String value) {
         if (value == null) {
-            throw new IllegalArgumentException("Street cannot be null.");
+            throw new IllegalArgumentException("Nationality cannot be null.");
         }
 
         this.value = value;
-    }
-
-    public String getValue() {
-        return value;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Street street = (Street) o;
-        return Objects.equals(value, street.value);
+        Nationality that = (Nationality) o;
+        return Objects.equals(value, that.value);
     }
 
     @Override
@@ -33,7 +29,7 @@ public final class Street {
 
     @Override
     public String toString() {
-        return "Street{" +
+        return "Nationality{" +
                 "value='" + value + '\'' +
                 '}';
     }

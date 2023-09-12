@@ -1,18 +1,12 @@
-package org.example.valueobject;
+package org.example.valueobject.address;
 
 import java.util.Objects;
 
-public final class SocialSecurityNumber {
+public final class Country {
 
     private final String value;
 
-    public SocialSecurityNumber(String value) {
-        if (value == null || value.trim().isEmpty()) {
-            throw new IllegalArgumentException("Social security number cannot be null or empty.");
-        }
-
-        // validate social security number with additional logic
-
+    public Country(String value) {
         this.value = value;
     }
 
@@ -24,8 +18,8 @@ public final class SocialSecurityNumber {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        SocialSecurityNumber that = (SocialSecurityNumber) o;
-        return Objects.equals(value, that.value);
+        Country country = (Country) o;
+        return Objects.equals(value, country.value);
     }
 
     @Override
@@ -35,7 +29,7 @@ public final class SocialSecurityNumber {
 
     @Override
     public String toString() {
-        return "SocialSecurityNumber{" +
+        return "Country{" +
                 "value='" + value + '\'' +
                 '}';
     }

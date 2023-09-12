@@ -1,11 +1,10 @@
 package org.example.domain;
 
-import org.example.valueobject.ID;
-
 import java.util.Objects;
 import java.util.UUID;
 
 public class Relationship {
+
     private UUID id;
     private Person sourcePerson;
     private Person targetPerson;

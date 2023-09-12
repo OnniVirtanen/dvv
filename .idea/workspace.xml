@@ -5,11 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca581bf5-97c8-4604-997c-9ff1c471f744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Amenity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/CompletionDate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PurposeOfUse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AlreadyMarkedAsDeceasedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/AlreadyMarkedAsDeceasedException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Amenity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Amenity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Apartment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/City.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/CompletionDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/CompletionDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Coordinates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Country.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/DateOfBirth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfBirth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/DateOfDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfDeath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/FirstName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/FirstName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/ID.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/LastName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/LastName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/MotherLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/MotherLanguage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Nationality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/Nationality.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/PostalCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PurposeOfUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/PurposeOfUse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/SocialSecurityNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/SocialSecurityNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Street.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Street.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/SurfaceArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/SurfaceArea.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

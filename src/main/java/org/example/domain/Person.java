@@ -1,12 +1,13 @@
 package org.example.domain;
-import org.example.AlreadyMarkedAsDeceasedException;
-import org.example.valueobject.*;
+import org.example.exception.AlreadyMarkedAsDeceasedException;
+import org.example.valueobject.person.*;
 
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
 
 public class Person {
+
     private UUID id;
     private SocialSecurityNumber socialSecurityNumber;
     private FirstName firstName;

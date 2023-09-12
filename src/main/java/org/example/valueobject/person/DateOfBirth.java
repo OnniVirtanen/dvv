@@ -1,4 +1,4 @@
-package org.example.valueobject;
+package org.example.valueobject.person;
 
 import java.time.LocalDate;
 import java.time.Period;

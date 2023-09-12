@@ -1,12 +1,16 @@
-package org.example.valueobject;
+package org.example.valueobject.address;
 
 import java.util.Objects;
 
-public final class PostalCode {
+public final class City {
 
     private final String value;
 
-    public PostalCode(String value) {
+    public City(String value) {
+        if (value == null) {
+            throw new IllegalArgumentException("City cannot be null.");
+        }
+
         this.value = value;
     }
 
@@ -18,8 +22,8 @@ public final class PostalCode {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        PostalCode that = (PostalCode) o;
-        return Objects.equals(value, that.value);
+        City city = (City) o;
+        return Objects.equals(value, city.value);
     }
 
     @Override
@@ -29,7 +33,7 @@ public final class PostalCode {
 
     @Override
     public String toString() {
-        return "PostalCode{" +
+        return "City{" +
                 "value='" + value + '\'' +
                 '}';
     }

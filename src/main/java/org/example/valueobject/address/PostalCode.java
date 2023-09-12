@@ -1,16 +1,12 @@
-package org.example.valueobject;
+package org.example.valueobject.address;
 
 import java.util.Objects;
 
-public final class MotherLanguage {
+public final class PostalCode {
 
     private final String value;
 
-    public MotherLanguage(String value) {
-        if (value == null || value.trim().isEmpty()) {
-            throw new IllegalArgumentException("Mother language cannot be null.");
-        }
-
+    public PostalCode(String value) {
         this.value = value;
     }
 
@@ -22,7 +18,7 @@ public final class MotherLanguage {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        MotherLanguage that = (MotherLanguage) o;
+        PostalCode that = (PostalCode) o;
         return Objects.equals(value, that.value);
     }
 
@@ -33,7 +29,7 @@ public final class MotherLanguage {
 
     @Override
     public String toString() {
-        return "MotherLanguage{" +
+        return "PostalCode{" +
                 "value='" + value + '\'' +
                 '}';
     }

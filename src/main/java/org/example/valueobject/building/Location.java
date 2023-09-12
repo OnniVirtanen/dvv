@@ -1,4 +1,4 @@
-package org.example.valueobject;
+package org.example.valueobject.building;
 
 import org.example.domain.Address;
 
