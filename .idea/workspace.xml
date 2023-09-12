@@ -5,16 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca581bf5-97c8-4604-997c-9ff1c471f744" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/AlreadyMarkedAsDeceasedException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Coordinates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/SurfaceArea.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Amenity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/CompletionDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PurposeOfUse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

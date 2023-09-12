@@ -1,8 +1,8 @@
 package org.example.domain;
 
-import org.example.valueobject.Location;
-import org.example.valueobject.SurfaceArea;
+import org.example.valueobject.*;
 
+import java.util.Set;
 import java.util.UUID;
 
 public class Building {
