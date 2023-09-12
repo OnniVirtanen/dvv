@@ -2,6 +2,8 @@ package org.example.domain;
 import org.example.exception.AlreadyMarkedAsDeceasedException;
 import org.example.valueobject.person.*;
 
+import java.time.LocalDate;
+import java.util.Collections;
 import java.util.Objects;
 import java.util.Set;
 import java.util.UUID;
@@ -46,8 +48,15 @@ public class Person {
         if (this.dateOfDeath != null) {
             throw new AlreadyMarkedAsDeceasedException("This person has already been marked as deceased.");
         }
+        if (isBeforeDateOfBirth(dateOfDeath.getValue())) {
+            throw new IllegalArgumentException("Date of death cannot be before date of birth.");
+        }
 
         this.dateOfDeath = dateOfDeath;
+    }
+
+    private boolean isBeforeDateOfBirth(LocalDate dateOfDeath) {
+        return dateOfDeath.isBefore(dateOfBirth.getValue());
     }
 
     public void addRelationship(Relationship relationship) {
@@ -63,7 +72,27 @@ public class Person {
     }
 
     public void addNationality(Nationality nationality) {
+        if (this.nationalities.contains(nationality)) {
+            throw new IllegalArgumentException("Person already has the nationality.");
+        }
+
         this.nationalities.add(nationality);
+    }
+
+    public void assignNewSocialSecurityNumber(SocialSecurityNumber socialSecurityNumber) {
+        this.socialSecurityNumber = socialSecurityNumber;
+    }
+
+    public Set<Relationship> getRelationships() {
+        return Collections.unmodifiableSet(relationships);
+    }
+
+    public boolean hasNationality(Nationality nationality) {
+        return this.nationalities.contains(nationality);
+    }
+
+    public DateOfBirth getDateOfBirth() {
+        return dateOfBirth;
     }
 
     @Override

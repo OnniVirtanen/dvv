@@ -8,15 +8,12 @@ public final class DateOfDeath {
 
     private final LocalDate value;
 
-    public DateOfDeath(LocalDate value, LocalDate dateOfBirth) {
+    public DateOfDeath(LocalDate value) {
         if (value == null) {
             throw new IllegalArgumentException("Date of death cannot be null.");
         }
         if (isDateInFuture(value)) {
             throw new IllegalArgumentException("Date of death cannot be in the future.");
-        }
-        if (dateOfBirth != null && !isAfterDateOfBirth(value, dateOfBirth)) {
-            throw new IllegalArgumentException("Date of death cannot be before date of birth.");
         }
         if (isTooHistorical(value)) {
             throw new IllegalArgumentException("Date of death is too far in the past.");
@@ -31,10 +28,6 @@ public final class DateOfDeath {
 
     private boolean isDateInFuture(LocalDate date) {
         return date.isAfter(LocalDate.now());
-    }
-
-    private boolean isAfterDateOfBirth(LocalDate dateOfDeath, LocalDate dateOfBirth) {
-        return !dateOfDeath.isBefore(dateOfBirth);
     }
 
     private boolean isTooHistorical(LocalDate date) {

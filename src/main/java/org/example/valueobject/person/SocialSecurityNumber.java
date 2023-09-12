@@ -10,8 +10,12 @@ public final class SocialSecurityNumber {
         if (value == null || value.trim().isEmpty()) {
             throw new IllegalArgumentException("Social security number cannot be null or empty.");
         }
+        if (value.length() != 11) {
+            throw new IllegalArgumentException("Social security number length must be 11 characters.");
+        }
 
         // validate social security number with additional logic
+        // this is by no means ready
 
         this.value = value;
     }

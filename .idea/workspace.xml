@@ -5,31 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca581bf5-97c8-4604-997c-9ff1c471f744" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/domain/PersonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/AlreadyMarkedAsDeceasedException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/AlreadyMarkedAsDeceasedException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Building.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/domain/Relationship.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Amenity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Amenity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Apartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Apartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/City.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/City.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/CompletionDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/CompletionDate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Coordinates.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Coordinates.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/DateOfBirth.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfBirth.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/DateOfDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfDeath.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/FirstName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/FirstName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/ID.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/LastName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/LastName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/MotherLanguage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/MotherLanguage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Nationality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/Nationality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PostalCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/PostalCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/PurposeOfUse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/PurposeOfUse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/SocialSecurityNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/SocialSecurityNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/Street.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/address/Street.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/SurfaceArea.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/building/SurfaceArea.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfDeath.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/DateOfDeath.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/SocialSecurityNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/valueobject/person/SocialSecurityNumber.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +22,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -67,7 +49,9 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": ""
   }
 }]]></component>
   <component name="RecentsManager">
@@ -76,6 +60,102 @@
       <recent name="org.example.domain" />
       <recent name="org.example.domain.valueobject" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.PersonTest">
+    <configuration name="PersonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PopulationInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.PersonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.addNewSocialSecurityNumber_InvalidSSN_throws" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PopulationInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.PersonTest" />
+      <option name="METHOD_NAME" value="addNewSocialSecurityNumber_InvalidSSN_throws" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.markDeceased_beforeBirth_throws" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PopulationInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.PersonTest" />
+      <option name="METHOD_NAME" value="markDeceased_beforeBirth_throws" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.socialSecurityNumberConstructor_InvalidSSN_throws" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PopulationInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.PersonTest" />
+      <option name="METHOD_NAME" value="socialSecurityNumberConstructor_InvalidSSN_throws" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PersonTest.socialSecurityNumberConstructor_validSSN_doesNotThrow" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PopulationInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.domain" />
+      <option name="MAIN_CLASS_NAME" value="org.example.domain.PersonTest" />
+      <option name="METHOD_NAME" value="socialSecurityNumberConstructor_validSSN_doesNotThrow" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.PersonTest" />
+        <item itemvalue="JUnit.PersonTest.socialSecurityNumberConstructor_validSSN_doesNotThrow" />
+        <item itemvalue="JUnit.PersonTest.socialSecurityNumberConstructor_InvalidSSN_throws" />
+        <item itemvalue="JUnit.PersonTest.addNewSocialSecurityNumber_InvalidSSN_throws" />
+        <item itemvalue="JUnit.PersonTest.markDeceased_beforeBirth_throws" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
